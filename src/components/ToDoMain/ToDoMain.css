@@ -1,0 +1,101 @@
+.card-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card{
+  height: 500px;
+  width: 400px;
+  box-shadow: 0px 0px 4px 4px whitesmoke;
+  border-radius: 30px;
+
+}
+.header{
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(90deg, #89f7fe 0%, #4dc4fc 100%);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box{
+  width: 100%;
+  height: 70px;
+  background: #fbfbfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.search-box input{
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+}
+.btn-container{
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  width: 90%;
+  /* outline: none; */
+  border: 2px dashed #9ecedb;
+  height: 60px;
+  border-radius: 70px;
+  background-color: #fff;
+  font-size: 20px;
+  color: #9ecedb;
+  cursor: pointer;
+  /* position: relative; */
+
+}
+.popup{
+  height: 80px;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: 10px 0;
+  position: absolute;
+  background-color: #555;
+  bottom: 50%;
+  visibility: hidden;
+
+}
+.popup input{
+  outline: none;
+  padding: 10px 20px;
+}
+.popup button{
+  width: 60px;
+  height: 30px;
+}
+.show{
+  visibility: visible;
+  -webkit-animation:fadeIn 1.6s;
+  animation: fadeIn 1.6s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.content{
+  height: 250px;
+  width: 90%;
+  margin-left: 30px;
+  overflow: auto;
+}
